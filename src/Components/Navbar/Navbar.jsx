@@ -1,8 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
+
+const nav = useNavigate();
+
   return (
     <>
       <div className="main">
@@ -11,21 +14,21 @@ const Navbar = () => {
           <div className="website">Website Name</div>
         </div>
         <div className="nav-right">
-          <Link to='/'>
-            <div className="pages">Page 1</div>
-          </Link>
-          <Link to='/Page2'>
-            <div className="pages">Page 2</div>
-          </Link>
-          <Link to='/Page3'>
-            <div className="pages">Page 3</div>
-          </Link>
-          <Link to='/Page4'>
-            <div className="pages">Page 4</div>
-          </Link>
-          <Link to='/Page5'>
-            <div className="pages">Page 5</div>
-          </Link>
+
+            <div onClick={() => nav('/')}><p className="pages">Page 1</p></div>
+          
+          
+            <div onClick={() => nav('/Page2')}><p className="pages">Page 2</p></div>
+          
+          
+            <div onClick={() => nav('/Page3')} ><p className="pages">Page 3</p></div>
+          
+          
+            <div onClick={() => nav('/Page4')} ><p className="pages">Page 4</p></div>
+          
+          
+            <div onClick={() => nav('/Page5')} ><p className="pages">Page 5</p></div>
+          
         </div>
       </div>
     </>

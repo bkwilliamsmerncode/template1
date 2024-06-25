@@ -4,9 +4,13 @@ import './Page2Content.css'
 const Page2Content = () => {
   return (
  <>
- <div className='page2Main'>
-    Page 2
- </div>
+   <div className="xlscreens">
+        <div className="xlsinner">
+          <div className="page2Main">
+            <h1>PAGE 2</h1>
+          </div>
+        </div>
+      </div>  
  </>
   )
 }

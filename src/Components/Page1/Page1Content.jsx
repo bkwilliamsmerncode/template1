@@ -1,14 +1,18 @@
-import React from 'react'
-import './Page1Content.css'
+import React from "react";
+import "./Page1Content.css";
 
 const Page1Content = () => {
   return (
- <>
- <div className='page1Main'>
-Page 1
- </div>
- </>
-  )
-}
+    <>
+      <div className="xlscreens">
+        <div className="xlsinner">
+          <div className="page1Main">
+            <h1>PAGE 1</h1>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default Page1Content
+export default Page1Content;

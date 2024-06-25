@@ -7,3 +7,23 @@
 body {
   background-color: whitesmoke;
 }
+
+.xlscreens {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.xlsinner {
+  width: 100%;
+  height: 100%;
+  max-width: 1800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid red;
+  margin: 20px;
+}

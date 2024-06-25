@@ -13,6 +13,12 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  font-size: larger;
+}
+
+.pages {
+  color: black;
+  font-size: larger;
 }
 
 .logo {

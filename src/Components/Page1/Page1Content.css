@@ -7,18 +7,44 @@
     font-size: 100px;
 }
 
-.video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1; /* Ensure the video is behind other content */
-  }
-  
-  .full-screen-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure the video covers the entire container */
-  }
+.App {
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-background {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  z-index: -1;
+}
+
+video {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.buttons {
+
+}
+
+button {
+  margin: 5px;
+  padding: 5px;
+  font-size: 10px;
+  cursor: pointer;
+}

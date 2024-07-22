@@ -20,11 +20,11 @@ const Page1Content = () => {
           fontSize: "50px"
         }}>Brian Williams</p>
         <p style={{
-          fontSize: "80px"
+          fontSize: "70px"
         }}>Full Stack Web Developer</p>
         <div className="buttons">
-          <button>Button 1</button>
-          <button>Button 2</button>
+          <button className="btn1">PROJECTS</button>
+          <button className="btn2">CONTACT</button>
         </div>
       </div>
     </div>
